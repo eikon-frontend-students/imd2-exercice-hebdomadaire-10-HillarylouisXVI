@@ -14,7 +14,7 @@ video {
 }
 
 body {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   background: var(--lavender, #c4d2f5);
 }
 
@@ -33,11 +33,17 @@ body {
   border-radius: 20px;
   background: var(--white, #ffffff);
   box-shadow: 0 0 0 20px rgba(255, 254, 254, 0.15);
+  margin: 125px 0px 0px 127px;
 }
 
 .player-track-title {
   font-size: 18px;
-  font-style: normal;
+  font-weight: 700;
+}
+.player-track-artist {
+  color: var(--gray, #909090);
+  font-family: Inter;
+  font-size: 15px;
   font-weight: 700;
 }
 .player-header {
@@ -52,4 +58,13 @@ body {
   align-items: center;
   gap: 15px;
   align-self: stretch;
+}
+
+.player-progres-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 3px;
+  background: var(--light-gray, #f6f6ef);
 }
