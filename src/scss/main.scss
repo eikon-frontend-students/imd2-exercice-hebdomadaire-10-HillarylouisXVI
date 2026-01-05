@@ -12,3 +12,44 @@ img,
 video {
   display: block;
 }
+
+body {
+  font-family: Inter;
+  background: var(--lavender, #c4d2f5);
+}
+
+.player audio {
+  display: none;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 20px;
+  background: var(--white, #ffffff);
+  box-shadow: 0 0 0 20px rgba(255, 254, 254, 0.15);
+}
+
+.player-track-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.player-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-progres {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+}
