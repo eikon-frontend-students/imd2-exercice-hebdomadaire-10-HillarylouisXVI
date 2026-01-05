@@ -50,21 +50,69 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
-.player-progres {
-  display: flex;
+.player-progress {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 15px;
-  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
 }
 
-.player-progres-bar {
+.player-progress-bar {
+  position: relative;
   display: flex;
   align-items: flex-start;
+  width: 100%;
   gap: 10px;
   flex: 1 0 0;
   border-radius: 3px;
   background: var(--light-gray, #f6f6ef);
+  height: 6px;
+}
+.player-progress-inner {
+  position: absolute;
+  max-width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--purple, #e783bc);
+}
+.player-time.current,
+.player-time.total {
+  color: var(--gray, #909090);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.player-button.play {
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 37px;
+  background: var(--purple, #e783bc);
+  color: var(--play-icon);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.player-button.pause {
+  width: 74px;
+  height: 74px;
+  border-radius: 37px;
+  background: var(--purple, #e783bc);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white, #fff);
+  font-size: 20px;
+  font-weight: 900;
 }
